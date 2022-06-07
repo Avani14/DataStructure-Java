@@ -39,5 +39,15 @@ public class LinkedListDriverClass {
         // Delete first
         ll.deleteFirst();
         ll.printList();
+        System.out.println();
+        // Delete last
+        ll.insert(56);
+        ll.printList();
+        ll.insert(30);
+        ll.printList();
+        ll.insert(70);
+        ll.printList();
+        ll.deleteLast();
+        ll.printList();
     }
 }
