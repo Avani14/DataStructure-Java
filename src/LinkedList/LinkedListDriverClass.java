@@ -36,6 +36,8 @@ public class LinkedListDriverClass {
         ll.insertAfter(70,30);
         ll.printList();
         System.out.println();
-
+        // Delete first
+        ll.deleteFirst();
+        ll.printList();
     }
 }

@@ -53,6 +53,11 @@ public class LinkedListServiceClass {
         }
         temp.next = node;
     }
+    //Delete first
+    public void deleteFirst()
+    {
+        head = head.next;
+    }
     //Printing list
     public  void printList() {
 
