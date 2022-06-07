@@ -25,7 +25,7 @@ public class LinkedListDriverClass {
         ll.insertFirst(56);
         ll.printList();
         System.out.println();
-        // Insert After Use case 3
+        // Insert After Use case 30
         ll.removeAll();
         ll.insert(56);
         ll.printList();
@@ -49,6 +49,18 @@ public class LinkedListDriverClass {
         System.out.println();
         // Searching
         ll.searchNode(30);
-
+        System.out.println();
+        ll.removeAll();
+        ll.insert(56);
+        ll.insert(30);
+        ll.insert(70);
+        ll.printList();
+        System.out.println();
+        ll.insertAfter(40,30);
+        ll.printList();
+        System.out.println();
+        ll.deleteData(40);
+        ll.printList();
+        System.out.println();
     }
 }
