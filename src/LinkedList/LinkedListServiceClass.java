@@ -100,7 +100,29 @@ public class LinkedListServiceClass {
 
     }
     //Sorting
-
+    public void sortData()
+    {
+        if(head == null)
+        {
+            System.out.println("List is empty");
+            return;
+        }
+        int data;
+        Node temp = head,index = null;
+        while(temp != null)
+        {
+            index = temp.next;
+            while (index!= null) {
+                if (temp.data > index.data) {
+                    data = temp.data;
+                    temp.data = index.data;
+                    index.data = data;
+                }
+                index = index.next;
+            }
+            temp = temp.next;
+        }
+    }
     //Printing list
     public  void printList() {
 
