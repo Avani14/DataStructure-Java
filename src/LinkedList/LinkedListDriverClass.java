@@ -62,5 +62,15 @@ public class LinkedListDriverClass {
         ll.deleteData(40);
         ll.printList();
         System.out.println();
+        ll.removeAll();
+        ll.insert(56);
+        ll.insert(30);
+        ll.insert(40);
+        ll.insert(70);
+        ll.printList();
+        System.out.println();
+        ll.sortData();
+        ll.printList();
+        System.out.println();
     }
 }
