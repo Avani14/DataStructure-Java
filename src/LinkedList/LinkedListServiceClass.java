@@ -68,6 +68,26 @@ public class LinkedListServiceClass {
         }
         temp.next = null;
     }
+    //Searching node
+    public void searchNode(int data)
+    {
+
+        if(head.data == data)
+        {
+            System.out.println("The node with data "+data+ " is present at location 1");
+            return;
+        }
+        Node node = new Node(data);
+        Node temp = head;
+        int count =2;
+        while(temp.data != data)
+        {
+            temp = temp.next;
+            count++;
+        }
+        System.out.println("The node with data "+data+" is present at "+count+" location");
+
+    }
     //Printing list
     public  void printList() {
 
