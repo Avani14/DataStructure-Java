@@ -58,6 +58,16 @@ public class LinkedListServiceClass {
     {
         head = head.next;
     }
+    //Delete last
+    public void deleteLast()
+    {
+        Node temp = head;
+        while(temp.next.next != null)
+        {
+            temp = temp.next;
+        }
+        temp.next = null;
+    }
     //Printing list
     public  void printList() {
 
