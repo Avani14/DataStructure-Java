@@ -43,14 +43,13 @@ public class LinkedListServiceClass {
         head = null;
     }
     //Insert After
-    public void insertAfter(int data,int dataAfter)
-    {
+    public void insertAfter(int data,int dataAfter) {
         Node node = new Node(data);
         Node temp = head;
-        while(temp.data != dataAfter)
-        {
+        while (temp.data != dataAfter) {
             temp = temp.next;
         }
+        node.next = temp.next;
         temp.next = node;
     }
     //Delete first
@@ -68,6 +67,18 @@ public class LinkedListServiceClass {
         }
         temp.next = null;
     }
+    //Delete the data
+    public void deleteData(int data)
+    {
+        Node node = new Node(data);
+        Node temp = head;
+        while(temp.next.data != data)
+        {
+            temp = temp.next;
+        }
+        temp.next = temp.next.next;
+    }
+
     //Searching node
     public void searchNode(int data)
     {
@@ -88,6 +99,8 @@ public class LinkedListServiceClass {
         System.out.println("The node with data "+data+" is present at "+count+" location");
 
     }
+    //Sorting
+
     //Printing list
     public  void printList() {
 
