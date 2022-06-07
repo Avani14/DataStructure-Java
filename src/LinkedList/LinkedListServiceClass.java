@@ -42,7 +42,17 @@ public class LinkedListServiceClass {
     {
         head = null;
     }
-
+    //Insert After
+    public void insertAfter(int data,int dataAfter)
+    {
+        Node node = new Node(data);
+        Node temp = head;
+        while(temp.data != dataAfter)
+        {
+            temp = temp.next;
+        }
+        temp.next = node;
+    }
     //Printing list
     public  void printList() {
 
