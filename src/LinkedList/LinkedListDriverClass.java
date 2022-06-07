@@ -25,7 +25,17 @@ public class LinkedListDriverClass {
         ll.insertFirst(56);
         ll.printList();
         System.out.println();
-
+        // Insert After Use case 3
+        ll.removeAll();
+        ll.insert(56);
+        ll.printList();
+        System.out.println();
+        ll.insertAfter(30,56);
+        ll.printList();
+        System.out.println();
+        ll.insertAfter(70,30);
+        ll.printList();
+        System.out.println();
 
     }
 }
