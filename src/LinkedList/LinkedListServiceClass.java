@@ -30,6 +30,19 @@ public class LinkedListServiceClass {
             temp.next = node;
         }
     }
+    //Inserting first
+    public void insertFirst(int data)
+    {
+        Node node = new Node(data);
+        node.next = head;
+        head = node;
+    }
+    //remove all the nodes
+    public void removeAll()
+    {
+        head = null;
+    }
+
     //Printing list
     public  void printList() {
 
